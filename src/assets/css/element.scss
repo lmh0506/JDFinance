@@ -27,10 +27,14 @@
     line-height: $height;
     text-align: center;
     padding: $txtPadding;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     color: $color;
     font-size: $fontSize;
+    @include ellipsis;
   }
+}
+
+@mixin ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

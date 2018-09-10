@@ -91,9 +91,7 @@ export default {
             }
 
             h4,p{
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden;
+              @include ellipsis;
               text-align: left;
             }
           }
